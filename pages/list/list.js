@@ -26,35 +26,8 @@ Page({
         content: '这是一条数据5'
       }
     ],
-    id: 5,
-    msg: '123123----'
   },
 
-  handleTapAdd(e) {
-    // console.log(this.data.msg)
-    // this.data.list.push({ id: this.data.id++, content: this.data.msg })
-    if (this.data.msg) {
-      this.setData({
-        list: [...this.data.list, {
-          id: this.data.id++,
-          content: this.data.msg
-        }],
-        msg: ''
-      })
-    }
-  },
-  handleDel(e) {
-    // console.log(e.currentTarget.dataset.id)
-    let id = e.currentTarget.dataset.id
-    this.setData({
-      list: this.data.list.filter(v => v.id !== id)
-    })
-  },
-  handleChange(e) {
-    this.setData({
-      msg: e.detail.value
-    })
-  },
   /**
    * 生命周期函数--监听页面加载
    */

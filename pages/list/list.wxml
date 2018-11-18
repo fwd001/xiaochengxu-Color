@@ -1,8 +1,2 @@
 <!--pages/list/list.wxml-->
 
-<input style='border: 1px solid #ccc' value='{{msg}}' bindinput="handleChange"></input>
-<button bindtap='handleTapAdd' type='primary'>提交</button>
-
-<view wx:for="{{list}}" wx:key="id" bindtap='handleDel' data-id="{{ item.id }}">
-  <text selectable='true'>{{ item.content }}</text>
-</view>
