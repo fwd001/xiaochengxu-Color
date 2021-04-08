@@ -1,2 +1,10 @@
 <!--pages/edit/edit.wxml-->
-<text>pages/edit/edit.wxml</text>
+<view class='container-edit' style='padding-top: {{navH}}px'>
+  <view class='header' style='height: {{navH}}px'>
+    <navigator open-type='redirect' class='cancel' url='/pages/list/list'>取消</navigator>
+    <navigator open-type='redirect' class='save' url='/pages/list/list'>存储</navigator>
+  </view>
+  <view class="section">
+    <textarea placeholder="" auto-focus />
+  </view>
+</view>
